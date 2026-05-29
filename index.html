@@ -1,48 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac Game</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+       .content{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+       }
+       
+    </style>
 </head>
-
 <body>
-    <header>
-        <div class="content">
-            <h1>TIC-TAC-TOE</h1>
-            <div class="turns">
-                <p id="turns"></p>
-            </div>
-            <div class="winner">
-                <span>CONGRATULATIONS!</span>
-                <p id="p1">player x is</p>
-                <p id="p2">THE Winner</p>
-                <button class="new-btn btn">New Game</button>
-                <button class="back-btn btn"><a href="home.html">Back to Home</a></button>
-            </div>
-
+    <div class="content">
+        <h1 class="heading">TIC-TAC-TOE</h1>
+        <div class="options">
+            <button class="Two btn"><a href="/index.html">Two Player</a></button>
+            <button class="single btn"><a href="/selectTurns.html">Single Player</a></button>
         </div>
-    </header>
-    <main>
-        <div class="btns">
-            <button class="boxes"></button>
-            <button class="boxes"></button>
-            <button class="boxes"></button>
-            <button class="boxes"></button>
-            <button class="boxes"></button>
-            <button class="boxes"></button>
-            <button class="boxes"></button>
-            <button class="boxes"></button>
-            <button class="boxes"></button>
-        </div>
-        <div class="op-btns">
-            <button class="res-btn btn">Reset Game</button>
-            
-        </div>
-    </main>
-    <script src="app.js"></script>
+    </div>
 </body>
-
 </html>
